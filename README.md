@@ -1,4 +1,4 @@
-GettingCleaningDataProject
+# GettingCleaningDataProject
 ==========================
 
 Getting and Cleaning Data project from Cousera
@@ -12,7 +12,7 @@ Reference: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L
 
 ==================================================================
 
-The dataset includes the following files:
+# The dataset includes the following files:
 =========================================
 
 - 'README.txt'
@@ -30,51 +30,51 @@ The dataset includes the following files:
 - 'avgtidydat_labels.txt': Tiday data variable labels.
 
 ===================================================================
-These are the steps in the R Script for Merging data
+# These are the steps in the R Script for Merging data
 
-# Load Test data
-# Load Subject for Test data
-# Load Activity for Test data
-# Merge Subject and Activity to Test data set
-# Load Training data
-# Load Subject for Training data
-# Load Activity for Training data
-# Merge Subject to Training data set
-# Merge Training and Test Data sets to create one combined data set
-
-===================================================================
-These are the steps in the R Script for Extract the measurements on the mean and standard deviation for each measurement
-
-# Load Features data
-# Convert feature from factor to character
-# Find index of the mean variables
-# Find index of the std deviation variables
-# Get combined index of mean variables, std dev variables and subject
-# Extract measurements on the mean and standard deviation for each measurement
+ Load Test data
+ Load Subject for Test data
+ Load Activity for Test data
+ Merge Subject and Activity to Test data set
+ Load Training data
+ Load Subject for Training data
+ Load Activity for Training data
+ Merge Subject to Training data set
+ Merge Training and Test Data sets to create one combined data set
 
 ===================================================================
-These are the steps in the R Script for descriptive activity names to name the activities in the data set
+# These are the steps in the R Script for Extract the measurements on the mean and standard deviation for each measurement
 
-# Load Activity Labels
-# Merge Activity Label and remove the label id column
-
-===================================================================
-These are the steps in the R Script for labelling the data set with descriptive variable names
-
-# Get variable names of mean and std deviation variables from the variable list
-# Add Subject and Activity to variable name
-# Rename variable with descriptive variable names
+ Load Features data
+ Convert feature from factor to character
+ Find index of the mean variables
+ Find index of the std deviation variables
+ Get combined index of mean variables, std dev variables and subject
+ Extract measurements on the mean and standard deviation for each measurement
 
 ===================================================================
-These are the steps in the R Script for Create tidy data set with the average of each variable for each activity and each subject
+# These are the steps in the R Script for descriptive activity names to name the activities in the data set
 
-# Make a skinny table of all mean and std deviation variables
-# Aggregate mean for the measurements for each subject and each activity 
-# Write data set to 'avgtidydat.txt' file
+ Load Activity Labels
+ Merge Activity Label and remove the label id column
+
+===================================================================
+# These are the steps in the R Script for labelling the data set with descriptive variable names
+
+ Get variable names of mean and std deviation variables from the variable list
+ Add Subject and Activity to variable name
+ Rename variable with descriptive variable names
+
+===================================================================
+# These are the steps in the R Script for Create tidy data set with the average of each variable for each activity and each subject
+
+ Make a skinny table of all mean and std deviation variables
+ Aggregate mean for the measurements for each subject and each activity 
+ Write data set to 'avgtidydat.txt' file
 
 
 ===================================================================
-Notes: 
+# Notes: 
 ======
 - Script run_analysis.R script is available in the main directory
 - Data should be downloaded from the URL https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
